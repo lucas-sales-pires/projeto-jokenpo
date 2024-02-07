@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpo</title>
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+    <h1>Vamos jogar ?</h1>
+    <p>Pontuação sua :<div id="pontuacaovc">0</div> </p>
+    <p>Pontuação Maquina:<div id="pontuacaomaq">0</div></p>
+    <fieldset>
+        <legend>Você</legend>
+        <label for="opcoes">Opções :</label>
+        <div id="opcoes">
+            <input type="radio" id="pedra" class="opcao" name="opcao" onchange="selecionado()"><img src="./pedra.png">
+            <input type="radio" id="papel" class="opcao" name="opcao" onchange="selecionado()" ><img src="./papel.png">
+            <input type="radio" id="tesoura" class="opcao" name="opcao" onchange="selecionado()" ><img src="./tesoura.png">
+        </div>
+    </fieldset>
+    <div id="res">Escolha uma opção para jogarmos </div>
+    <fieldset>
+        <legend>Máquina</legend>
+        <label for="maquina">Jogada Máquina</label>
+        <div>
+            <img src="./maquina.jpg" id =jogadaMaq>
+        </div>
+
+    </fieldset>
+
+<script src="./index.js"></script>    
+</body>
+</html>
